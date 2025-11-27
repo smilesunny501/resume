@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蘇厚任 - 履歷表</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+            background: #f5f7fa;
+            color: #2d2d2d;
+            line-height: 1.7;
+            padding: 30px 15px;
+        }
+        .resume {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            position: relative;
+        }
+        header {
+            background: linear-gradient(120deg, #84fab0, #8fd3f4);
+            color: #222;
+            padding: 70px 40px;
+            text-align: center;
+        }
+        h1 { font-size: 46px; font-weight: 800; margin-bottom: 8px; }
+        .email { font-size: 19px; margin-top: 12px; opacity: 0.9; }
+
+        /* 下載 PDF 按鈕 */
+        .download-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.75);
+            color: white;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            z-index: 100;
+        }
+        .download-btn:hover { background: #000; transform: translateY(-3px); }
+
+        .container { padding: 45px 50px; }
+        h2 {
+            font-size: 26px;
+            color: #84fab0;
+            margin-bottom: 22px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #84fab0;
+            display: inline-block;
+        }
+        .section { margin-bottom: 40px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 12px; margin: 15px 0; }
+        .tag {
+            background: #e0f7fa;
+            color: #006064;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .exp-item {
+            margin-bottom: 28px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background: #84fab0;
+            border-radius: 50%;
+        }
+        .exp-title { font-weight: 700; font-size: 17px; color: #222; }
+        .exp-place { color: #84fab0; font-weight: 600; margin: 4px 0; }
+        .exp-time { font-size: 14px; color: #777; }
+        ul { margin: 10px 0 0 20px; }
+        li { margin-bottom: 6px; }
+
+        @media (max-width: 768px) {
+            header { padding: 50px 20px; }
+            h1 { font-size: 36px; }
+            .container { padding: 30px 25px; }
+            .download-btn { top: 15px; right: 15px; padding: 10px 16px; font-size: 14px; }
+        }
+
+        /* 列印時隱藏按鈕、背景色變白 */
+        @media print {
+            body { background: white; padding: 0; }
+            .download-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume">
+    <button class="download-btn" onclick="window.print()">
+        PDF 下載 PDF
+    </button>
+
+    <header>
+        <h1>蘇厚任</h1>
+        <div class="email">smilesunny101@gmail.com</div>
+    </header>
+
+    <div class="container">
+        <!-- 以下內容完全不變 -->
+        <div class="section">
+            <h2>關於我</h2>
+            <p style="font-size:16px; text-align:justify;">
+                亞洲大學經營管理學系學生，個性開朗、好奇心強，喜歡挑戰新事物並樂於與不同背景的人交流。
+                擅長將創意轉化為實際執行，具備室內設計與空間美學敏感度，也熱衷形象管理與活動企劃。
+                期待將校內外累積的軟硬實力帶入職場，與團隊一起創造價值！
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>專業技能</h2>
+            <div class="tags">
+                <span class="tag">室內設計</span>
+                <span class="tag">空間規劃與布置</span>
+                <span class="tag">形象管理與個人品牌</span>
+                <span class="tag">活動企劃執行</span>
+                <span class="tag">手繪與3D渲染</span>
+                <span class="tag">攝影與後製</span>
+                <span class="tag">Canva / Photoshop / SketchUp</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>語言能力</h2>
+            <div class="tags">
+                <span class="tag">中文（母語）</span>
+                <span class="tag">英文（中高級）</span>
+                <span class="tag">日文（日常會話）</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>經歷與專案</h2>
+            
+            <div class="exp-item">
+                <div class="exp-title">校園迎新晚會 整體視覺統籌 & 舞台設計</div>
+                <div class="exp-place">亞洲大學學生會活動部</div>
+                <div class="exp-time">2024.09 – 2024.10</div>
+                <ul><li>負責主視覺發想、舞台背景與動線設計，讓整體風格獲得師生一致好評</li><li>統籌燈光、道具、空間布置，控制預算在8萬元內並提前兩週完工</li></ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">宿舍改造計畫 室內設計提案</div>
+                <div class="exp-place">個人作品（可提供完整提案檔案）</div>
+                <div class="exp-time">2024.06 – 2024.08</div>
+                <ul><li>為四人雅房設計北歐日式混搭風格，包含手繪圖、3D模型、預算表</li><li>實際執行採購與布置，總花費壓在1.2萬內，獲得室友高度滿意</li></ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">系學會外聯組組員 → 組長</div>
+                <div class="exp-place">亞洲大學經營管理學系</div>
+                <div class="exp-time">2023.09 – 至今</div>
+                <ul><li>聯繫超過15家企業參與校園徵才與講座，爭取贊助金額累計超過12萬元</li><li>負責企業窗口溝通、合約簽訂與活動當天接待，訓練抗壓與協調能力</li></ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-title">咖啡廳打工 門市服務人員</div>
+                <div class="exp-place">台中某連鎖手沖咖啡廳</div>
+                <div class="exp-time">2023.07 – 2024.02</div>
+                <ul><li>學習顧客需求分析與客製化服務，練就親切有耐心的溝通態度</li><li>負責店內陳列與季節限定佈置，提升拍照打卡率約30%</li></ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>學歷</h2>
+            <div style="font-size:16px;">
+                <strong>亞洲大學 Asia University</strong><br>
+                經營管理學系 Department of Business Administration<br>
+                在學中
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 這行只是讓按鈕更好看，實際功能就是 window.print()
+    // 100% 一定會成功！
+</script>
+</body>
+</html>
